@@ -19,10 +19,7 @@ namespace DAL
 
         public int Add(Mark value)
         {
-            using (var connection = new SqlConnection(_connectionString))
-            {
-                var cmd = connection.CreateCommand();
-            }
+            return 0;
         }
 
         public IEnumerable<Mark> GetAll()
@@ -36,13 +33,14 @@ namespace DAL
                 var reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    Add(new Mark
+                    marks.Add(new Mark
                     {
                         ID = (int)reader["MarkID"],
                         Name = (string)reader["Name"]
                     });
                 }
             }
+            return marks;
         }
 
         public IEnumerable<Mark> GetByID(int id)

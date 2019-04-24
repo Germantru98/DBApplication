@@ -1,4 +1,5 @@
 ﻿using System;
+using DAL;
 
 namespace ConsoleApp1
 {
@@ -6,7 +7,12 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            MarkDao t = new MarkDao();            
+            foreach (var test in t.GetAll())
+            {
+                Console.WriteLine(test);
+            }
+
         }
     }
 }
