@@ -19,12 +19,16 @@ namespace DAL
 
         public int Add(Mark value)
         {
-            return 0;
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var cmd = connection.CreateCommand();
+                
+            }
         }
 
         public IEnumerable<Mark> GetAll()
         {
-            using(var connection = new SqlConnection(_connectionString))
+            using (var connection = new SqlConnection(_connectionString))
             {
                 var cmd = connection.CreateCommand();
                 cmd.CommandType = CommandType.Text;
