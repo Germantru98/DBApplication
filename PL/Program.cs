@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
+using Entities;
 
 namespace PL
 {
@@ -15,7 +16,7 @@ namespace PL
             foreach (var test in t.GetAll())
             {
                 Console.WriteLine(test);
-            }
+            }            
         }
     }
 }

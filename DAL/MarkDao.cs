@@ -24,6 +24,7 @@ namespace DAL
                 var cmd = connection.CreateCommand();
                 
             }
+            return 0;
         }
 
         public IEnumerable<Mark> GetAll()
@@ -49,7 +50,23 @@ namespace DAL
 
         public IEnumerable<Mark> GetByID(int id)
         {
-            throw new NotImplementedException();
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var cmd = connection.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select * from Mark where MarkID = "+id;
+                connection.Open();
+                var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    marks.Add(new Mark
+                    {
+                        ID = (int)reader["MarkID"],
+                        Name = (string)reader["Name"]
+                    });
+                }
+            }
+            return marks;
         }
 
         public int Remove(Mark value)
