@@ -17,14 +17,13 @@ namespace DAL
             marks = new List<Mark>();
         }
 
-        public int Add(Mark value)
+        public void Add(Mark value)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
                 var cmd = connection.CreateCommand();
                 
-            }
-            return 0;
+            }           
         }
 
         public IEnumerable<Mark> GetAll()
@@ -69,7 +68,7 @@ namespace DAL
             return marks;
         }
 
-        public int Remove(Mark value)
+        public void Remove(Mark value)
         {
             throw new NotImplementedException();
         }

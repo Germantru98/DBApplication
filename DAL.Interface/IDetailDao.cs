@@ -7,9 +7,9 @@ namespace DAL.Interface
     interface IDetailDao
     {
         IEnumerable<Detail> GetAll();
-        int Add(Detail value);
+        void Add(Detail value);
 
-        int Remove(Detail value);
+        void Remove(Detail value);
 
         IEnumerable<Detail> GetByID(int id);
     }

@@ -7,9 +7,9 @@ namespace DAL.Interface
     public interface IMarkDao
     {
         IEnumerable<Mark> GetAll();
-        int Add(Mark value);
+        void Add(Mark value);
 
-        int Remove(Mark value);
+        void Remove(Mark value);
 
         IEnumerable<Mark> GetByID(int id);
     }
