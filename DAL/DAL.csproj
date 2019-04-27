@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetailDao.cs" />
     <Compile Include="MarkDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

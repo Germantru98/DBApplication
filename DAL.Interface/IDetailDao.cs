@@ -4,13 +4,13 @@ using Entities;
 
 namespace DAL.Interface
 {
-    interface IDetailDao
+    public interface IDetailDao
     {
         IEnumerable<Detail> GetAll();
         void Add(Detail value);
 
-        void Remove(Detail value);
+        void RemoveByID(int ID);
 
-        IEnumerable<Detail> GetByID(int id);
+        Detail GetByID(int ID);
     }
 }

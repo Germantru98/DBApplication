@@ -9,8 +9,8 @@ namespace DAL.Interface
         IEnumerable<Mark> GetAll();
         void Add(Mark value);
 
-        void Remove(Mark value);
+        void RemoveByID(int ID);
 
-        IEnumerable<Mark> GetByID(int id);
+        Mark GetByID(int ID);
     }
 }

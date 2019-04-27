@@ -1,24 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
-using DAL.Interface;
+﻿using System.Collections.Generic;
 using Entities;
+using DAL.Interface;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace DAL
 {
-    public class MarkDao : IMarkDao
+    public class DetailDao : IDetailDao
     {
         private string _connectionString = @"Data Source=TOP-PC\SQLEXPRESS;Initial Catalog = RepairStation; Integrated Security = True";
-        public void Add(Mark value)
+        public void Add(Detail value)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
                 var cmd = connection.CreateCommand();
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "AddMark";
-                cmd.Parameters.AddWithValue(@"Name", value.Name);
-
+                cmd.CommandText = "AddDetail";
+                cmd.Parameters.AddWithValue(@"DetailName", value.Detail_Name);
+                cmd.Parameters.AddWithValue(@"Price", value.Price);
                 var id = new SqlParameter
                 {
                     DbType = DbType.Int32,
@@ -30,48 +29,48 @@ namespace DAL
                 cmd.ExecuteNonQuery();
             }
         }
-
-        public IEnumerable<Mark> GetAll()
+        public IEnumerable<Detail> GetAll()
         {
-            List<Mark> marks = new List<Mark>();
+            List<Detail> details = new List<Detail>();
             using (var connection = new SqlConnection(_connectionString))
             {
                 var cmd = connection.CreateCommand();
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "GetAllMarks";
+                cmd.CommandText = "GetAllDetail";
                 connection.Open();
                 var reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    marks.Add(new Mark
+                    details.Add(new Detail
                     {
-                        ID = (int)reader["MarkID"],
-                        Name = (string)reader["Name"]
+                        ID = (int)reader["DetailID"],
+                        Detail_Name = (string)reader["DetailName"],
+                        Price = (decimal)reader["Price"]
                     });
                 }
             }
-            return marks;
+            return details;
         }
 
-        public Mark GetByID(int ID)
+        public Detail GetByID(int ID)
         {
-            Mark mark = new Mark();
+            Detail detail = new Detail();
             using (var connection = new SqlConnection(_connectionString))
             {
                 var cmd = connection.CreateCommand();
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "GetMarkByID";
+                cmd.CommandText = "GetDetailByID";
                 cmd.Parameters.AddWithValue(@"ID", ID);
                 connection.Open();
                 var reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    mark.ID = (int)reader["MarkID"];
-                    mark.Name = (string)reader["Name"];
+                    detail.ID = (int)reader["DetailID"];
+                    detail.Detail_Name = (string)reader["DetailName"];
+                    detail.Price = (decimal)reader["Price"];
                 }
             }
-            return mark;
-
+            return detail;
         }
 
         public void RemoveByID(int ID)
@@ -80,7 +79,7 @@ namespace DAL
             {
                 var cmd = connection.CreateCommand();
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "RemoveMark";
+                cmd.CommandText = "RemoveDetail";
                 cmd.Parameters.AddWithValue(@"ID", ID);
                 connection.Open();
                 cmd.ExecuteNonQuery();

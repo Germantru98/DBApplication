@@ -14,7 +14,7 @@ namespace Entities
 
         public override string ToString()
         {
-            return $"{ID} {Detail_Name} {Price}";
+            return $"{ID}. {Detail_Name} Стоимость: {Price}";
         }
     }
 }

@@ -12,11 +12,11 @@ namespace PL
     {
         static void Main(string[] args)
         {
-            MarkDao t = new MarkDao();
+            DetailDao t = new DetailDao();            
             foreach (var test in t.GetAll())
             {
                 Console.WriteLine(test);
-            }            
+            }
         }
     }
 }
