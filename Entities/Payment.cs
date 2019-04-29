@@ -13,7 +13,7 @@ namespace Entities
         public string Type { get; set; }
         public override string ToString()
         {
-            return $"{ID} {Name} {Type}";
+            return $"{ID}. Способ оплаты: {Name} Тип: {Type}";
         }
     }
 }

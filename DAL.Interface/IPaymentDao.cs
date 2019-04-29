@@ -7,7 +7,7 @@ using Entities;
 
 namespace DAL.Interface
 {
-    interface IPaymentDao
+    public interface IPaymentDao
     {
         IEnumerable<Payment> GetAll();
         void Add(Payment value);
