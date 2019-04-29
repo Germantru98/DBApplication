@@ -41,9 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ICarDao.cs" />
+    <Compile Include="IClientDao.cs" />
+    <Compile Include="IContractDao.cs" />
     <Compile Include="IDetailDao.cs" />
+    <Compile Include="IListOfDetailDao.cs" />
+    <Compile Include="IListOfServiceDao.cs" />
     <Compile Include="IMarkDao.cs" />
+    <Compile Include="IPaymentDao.cs" />
     <Compile Include="IServiceDao.cs" />
+    <Compile Include="ISpecialistDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
