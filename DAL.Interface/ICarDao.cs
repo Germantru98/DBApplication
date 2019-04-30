@@ -7,7 +7,7 @@ using Entities;
 
 namespace DAL.Interface
 {
-    interface ICarDao
+    public interface ICarDao
     {
         IEnumerable<Car> GetAll();
         void Add(Car value);

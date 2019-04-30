@@ -7,7 +7,7 @@ using Entities;
 
 namespace DAL.Interface
 {
-    interface IClientDao
+    public interface IClientDao
     {
         IEnumerable<Client> GetAll();
         void Add(Client value);

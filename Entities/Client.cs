@@ -16,7 +16,7 @@ namespace Entities
         public string Address { get; set; }
         public override string ToString()
         {
-            return $"{ID} {Name} {SecondName} {PhoneNumber} {Passport} {Address}";
+            return $"{ID}. Имя: {Name} Фамилия: {SecondName} Номер Телефона: {PhoneNumber} Паспорт: {Passport} Адрес:{Address}";
         }
     }
 }

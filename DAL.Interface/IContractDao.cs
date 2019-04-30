@@ -7,7 +7,7 @@ using Entities;
 
 namespace DAL.Interface
 {
-    interface IContractDao
+    public interface IContractDao
     {
         IEnumerable<Contract> GetAll();
         void Add(Contract value);

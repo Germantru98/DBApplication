@@ -17,7 +17,7 @@ namespace Entities
         public string Colour { get; set; }
         public override string ToString()
         {
-            return $"{ID} {ClientID} {Number} {Mark} {Model} {DateOfManufacture.ToShortDateString()} {Colour}";
+            return $"{ID}. Клиент: {ClientID} Номер: {Number} Марка: {Mark} Модель: {Model} Дата Выпуска: {DateOfManufacture.ToShortDateString()} Цвет: {Colour}";
         }
 
     }

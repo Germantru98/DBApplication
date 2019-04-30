@@ -18,7 +18,7 @@ namespace Entities
 
         public override string ToString()
         {
-            return $"{ID} {CarID} {SpecialistID} {Date} {Time} {Defect} {Payment}";
+            return $"{ID}. Автомобиль: {CarID} Специалист: {SpecialistID} Дата:{Date.ToShortDateString()} Затраченое время: {Time} Дефект: {Defect} Способ оплаты: {Payment}";
 
         }
     }
