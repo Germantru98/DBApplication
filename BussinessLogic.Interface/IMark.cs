@@ -8,10 +8,10 @@ namespace BussinessLogic.Interface
     {
         IEnumerable<Mark> GetAll();
 
-        int Add(Mark value);
+        void Add(Mark value);
 
-        int Remove(Mark value);
+        void Remove(int ID);
 
-        IEnumerable<Mark> GetByID(int id);
+        Mark GetByID(int ID);
     }
 }

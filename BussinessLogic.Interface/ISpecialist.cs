@@ -1,18 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Entities;
 
-namespace DAL.Interface
+namespace BussinessLogic.Interface
 {
-    public interface ISpecialistDao
+    public interface ISpecialist
     {
         IEnumerable<Specialist> GetAll();
+
         void Add(Specialist value);
 
-        void RemoveByID(int ID);
+        void Remove(int ID);
 
         Specialist GetByID(int ID);
     }

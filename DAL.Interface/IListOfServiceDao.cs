@@ -5,15 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Entities;
 
+
 namespace DAL.Interface
 {
-    interface IListOfServiceDao
+    public interface IListOfServiceDao
     {
-        IEnumerable<ListOfService> GetAll();
+        IEnumerable<ListOfService> GetAllServices(int contractID);
         void Add(ListOfService value);
-
-        void RemoveByID(int ID);
-
-        ListOfService GetByID(int ID);
+        void RemoveByID(int contractID);
     }
 }

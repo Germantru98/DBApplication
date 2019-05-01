@@ -14,7 +14,7 @@ namespace Entities
         public string Qualification { get; set; }
         public override string ToString()
         {
-            return $"{ID} {Name} {SecondName} {Qualification}";
+            return $"{ID}. Имя:{Name} Фамилия:{SecondName} Квалификация:{Qualification}";
         }
     }
 }

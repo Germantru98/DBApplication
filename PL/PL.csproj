@@ -50,6 +50,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{1ba9794a-9664-44dc-84a6-cf2010567b2d}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BussinessLogic.Interface\BussinessLogic.Interface.csproj">
+      <Project>{ad97c130-2220-41af-9891-0193a53e1ae3}</Project>
+      <Name>BussinessLogic.Interface</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{31ab7994-6876-48ad-bdf9-27c24af8751b}</Project>
       <Name>DAL</Name>

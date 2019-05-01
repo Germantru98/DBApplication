@@ -46,10 +46,13 @@
     <Compile Include="ClientDao.cs" />
     <Compile Include="ContractDao.cs" />
     <Compile Include="DetailDao.cs" />
+    <Compile Include="LoDDao.cs" />
+    <Compile Include="LoSDao.cs" />
     <Compile Include="MarkDao.cs" />
     <Compile Include="PaymentDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceDao.cs" />
+    <Compile Include="SpecialistDao.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL.Interface\DAL.Interface.csproj">

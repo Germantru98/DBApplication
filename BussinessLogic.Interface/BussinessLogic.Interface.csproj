@@ -41,7 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ICar.cs" />
+    <Compile Include="IClient.cs" />
+    <Compile Include="IContract.cs" />
+    <Compile Include="IDetail.cs" />
+    <Compile Include="IListOfDetail.cs" />
+    <Compile Include="IListOfService.cs" />
     <Compile Include="IMark.cs" />
+    <Compile Include="IPayment.cs" />
+    <Compile Include="IService.cs" />
+    <Compile Include="ISpecialist.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

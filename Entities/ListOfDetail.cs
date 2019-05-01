@@ -13,7 +13,7 @@ namespace Entities
 
         public override string ToString()
         {
-            return $"{ContractID} {DetailID}";
+            return $"Номер контракта: {ContractID}. Номер детали:{DetailID}.";
         }
     }
 }

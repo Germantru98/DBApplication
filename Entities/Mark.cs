@@ -14,5 +14,14 @@ namespace Entities
         {
             return $"{ID}. {Name}";
         }
+        public Mark()
+        {
+        }
+        public Mark(int id,string name)
+        {
+            ID = id;
+            Name = name;
+        }
+
     }
 }

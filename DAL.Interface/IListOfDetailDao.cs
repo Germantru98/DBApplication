@@ -7,13 +7,11 @@ using Entities;
 
 namespace DAL.Interface
 {
-    interface IListOfDetailDao
+    public interface IListOfDetailDao
     {
-        IEnumerable<ListOfDetail> GetAll();
+        IEnumerable<ListOfDetail> GetAllDetail(int contractID);
         void Add(ListOfDetail value);
-
-        void RemoveByID(int ID);
-
-        ListOfDetail GetByID(int ID);
+        void RemoveByID(int contractID);
+        
     }
 }
