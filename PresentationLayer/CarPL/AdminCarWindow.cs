@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessLogic;
+using PresentationLayer.CarPL;
 
 namespace PresentationLayer.CarPL
 {
@@ -18,6 +19,29 @@ namespace PresentationLayer.CarPL
         {
             InitializeComponent();
             CarTable.DataSource = carLogic.GetAll();
+        }
+
+        private void AdminCarWindow_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            AdminForm f = new AdminForm();
+            f.Show();
+        }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            AddCarForm f = new AddCarForm();
+            f.Show();
+        }
+
+        private void RefreshButton_Click(object sender, EventArgs e)
+        {
+            CarTable.DataSource = carLogic.GetAll();
+        }
+
+        private void RemoveButton_Click(object sender, EventArgs e)
+        {
+            int id = (int)CarTable.CurrentRow.Cells[0].Value;
+            carLogic.Remove(id);
         }
     }
 }

@@ -53,6 +53,7 @@
             this.AddButton.TabIndex = 1;
             this.AddButton.Text = "Add";
             this.AddButton.UseVisualStyleBackColor = true;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // RemoveButton
             // 
@@ -63,6 +64,7 @@
             this.RemoveButton.TabIndex = 2;
             this.RemoveButton.Text = "Remove";
             this.RemoveButton.UseVisualStyleBackColor = true;
+            this.RemoveButton.Click += new System.EventHandler(this.RemoveButton_Click);
             // 
             // RefreshButton
             // 
@@ -73,6 +75,7 @@
             this.RefreshButton.TabIndex = 3;
             this.RefreshButton.Text = "Refresh";
             this.RefreshButton.UseVisualStyleBackColor = true;
+            this.RefreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
             // 
             // AdminCarWindow
             // 
@@ -88,6 +91,7 @@
             this.Name = "AdminCarWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminCarWindow";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AdminCarWindow_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.CarTable)).EndInit();
             this.ResumeLayout(false);
 

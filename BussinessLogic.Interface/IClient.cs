@@ -5,7 +5,7 @@ using Entities;
 
 namespace BussinessLogic.Interface
 {
-    interface IClient
+    public interface IClient
     {
         IEnumerable<Client> GetAll();
 
