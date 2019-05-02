@@ -7,12 +7,12 @@ namespace BussinessLogic.Interface
 {
     public interface ICar
     {
-        IEnumerable<Car> GetAll();
+        IEnumerable<Car<string>> GetAll();
 
-        void Add(Car value);
+        void Add(Car<int> value);
 
         void Remove(int ID);
 
-        Car GetByID(int ID);
+        Car<int> GetByID(int ID);
     }
 }

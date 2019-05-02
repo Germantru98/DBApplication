@@ -9,11 +9,11 @@ namespace DAL.Interface
 {
     public interface ICarDao
     {
-        IEnumerable<Car> GetAll();
-        void Add(Car value);
+        IEnumerable<Car<string>> GetAll();
+        void Add(Car<int> value);
 
         void RemoveByID(int ID);
 
-        Car GetByID(int ID);
+        Car<int> GetByID(int ID);
     }
 }

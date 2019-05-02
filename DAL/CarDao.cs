@@ -10,7 +10,7 @@ namespace DAL
     public class CarDao : ICarDao
     {
         private string _connectionString = @"Data Source=TOP-PC\SQLEXPRESS;Initial Catalog = RepairStation; Integrated Security = True";
-        public void Add(Car value)
+        public void Add(Car<int> value)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
@@ -36,24 +36,24 @@ namespace DAL
             }
         }
 
-        public IEnumerable<Car> GetAll()
+        public IEnumerable<Car<string>> GetAll()
         {
-            List<Car> cars = new List<Car>();
+            List<Car<string>> cars = new List<Car<string>>();
             using (var connection = new SqlConnection(_connectionString))
             {
                 var cmd = connection.CreateCommand();
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "GetAllCars";
+                cmd.CommandText = "GetAllCarFromView";
                 connection.Open();
                 var reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    cars.Add(new Car
+                    cars.Add(new Car<string>
                     {
                         ID = (int)reader["CarID"],
                         ClientID = (int)reader["ClientID"],
                         Number = (string)reader["Number"],
-                        Mark = (int)reader["Mark"],
+                        Mark = (string)reader["Mark"],
                         Model = (string)reader["Model"],
                         DateOfManufacture = (DateTime)reader["DofM"],
                         Colour = (string)reader["Colour"]
@@ -63,9 +63,9 @@ namespace DAL
             return cars;
         }
 
-        public Car GetByID(int ID)
+        public Car<int> GetByID(int ID)
         {
-            Car car = new Car();
+            Car<int> car = new Car<int>();
             using (var connection = new SqlConnection(_connectionString))
             {
                 var cmd = connection.CreateCommand();

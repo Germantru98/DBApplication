@@ -17,9 +17,8 @@ namespace Entities
         public Mark()
         {
         }
-        public Mark(int id,string name)
-        {
-            ID = id;
+        public Mark(string name)
+        {            
             Name = name;
         }
 

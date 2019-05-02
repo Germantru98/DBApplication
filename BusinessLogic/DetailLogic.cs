@@ -9,7 +9,7 @@ using DAL;
 
 namespace BusinessLogic
 {
-    class DetailLogic : IDetail
+    public class DetailLogic : IDetail
     {
         private DetailDao detailDao = new DetailDao();
         public void Add(Detail value)

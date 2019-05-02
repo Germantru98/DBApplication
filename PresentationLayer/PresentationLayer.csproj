@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F9953BE-9B0C-430D-A8F2-672A48500349}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PresentationLayer</RootNamespace>
+    <AssemblyName>PresentationLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUserForm.Designer.cs">
+      <DependentUpon>AdminUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarPL\AddCarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarPL\AddCarForm.Designer.cs">
+      <DependentUpon>AddCarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarPL\AdminCarWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarPL\AdminCarWindow.Designer.cs">
+      <DependentUpon>AdminCarWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientPL\ClientAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientPL\ClientAdminForm.Designer.cs">
+      <DependentUpon>ClientAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailPL\AddDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailPL\AddDetail.Designer.cs">
+      <DependentUpon>AddDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailPL\DetailAdminWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailPL\DetailAdminWindow.Designer.cs">
+      <DependentUpon>DetailAdminWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarkPL\AddMarkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarkPL\AddMarkForm.Designer.cs">
+      <DependentUpon>AddMarkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarkPL\MarkAdminWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarkPL\MarkAdminWindow.Designer.cs">
+      <DependentUpon>MarkAdminWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentPL\AddPaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentPL\AddPaymentForm.Designer.cs">
+      <DependentUpon>AddPaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentPL\PaymentAdminWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentPL\PaymentAdminWindow.Designer.cs">
+      <DependentUpon>PaymentAdminWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicePL\AddServiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicePL\AddServiceForm.Designer.cs">
+      <DependentUpon>AddServiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServicePL\AdminServiceWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicePL\AdminServiceWindow.Designer.cs">
+      <DependentUpon>AdminServiceWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialistPL\AddSpecialistForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecialistPL\AddSpecialistForm.Designer.cs">
+      <DependentUpon>AddSpecialistForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialistPL\AdminSpecialistForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecialistPL\AdminSpecialistForm.Designer.cs">
+      <DependentUpon>AdminSpecialistForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUserForm.resx">
+      <DependentUpon>AdminUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarPL\AddCarForm.resx">
+      <DependentUpon>AddCarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarPL\AdminCarWindow.resx">
+      <DependentUpon>AdminCarWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientPL\ClientAdminForm.resx">
+      <DependentUpon>ClientAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailPL\AddDetail.resx">
+      <DependentUpon>AddDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailPL\DetailAdminWindow.resx">
+      <DependentUpon>DetailAdminWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarkPL\AddMarkForm.resx">
+      <DependentUpon>AddMarkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarkPL\MarkAdminWindow.resx">
+      <DependentUpon>MarkAdminWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentPL\AddPaymentForm.resx">
+      <DependentUpon>AddPaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentPL\PaymentAdminWindow.resx">
+      <DependentUpon>PaymentAdminWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ServicePL\AddServiceForm.resx">
+      <DependentUpon>AddServiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServicePL\AdminServiceWindow.resx">
+      <DependentUpon>AdminServiceWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecialistPL\AddSpecialistForm.resx">
+      <DependentUpon>AddSpecialistForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecialistPL\AdminSpecialistForm.resx">
+      <DependentUpon>AdminSpecialistForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\BusinessLogic.MarkLogic.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{1ba9794a-9664-44dc-84a6-cf2010567b2d}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{b0146bef-eb5e-43eb-ba1f-c51313d96cef}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

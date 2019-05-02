@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CarLogic.cs" />
     <Compile Include="ContractLogic.cs" />
     <Compile Include="DetailLogic.cs" />
     <Compile Include="MarkLogic.cs" />

@@ -6,7 +6,7 @@ using BussinessLogic.Interface;
 
 namespace BusinessLogic
 {
-    class PaymentLogic : IPayment
+    public class PaymentLogic : IPayment
     {
         private PaymentDao paymentDao = new PaymentDao();
         public void Add(Payment value)

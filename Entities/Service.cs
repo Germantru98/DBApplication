@@ -12,6 +12,13 @@ namespace Entities
         public string Description { get; set; }
         public decimal Price { get; set; }
 
+        public Service()
+        { }
+        public Service(string description, decimal price)
+        {
+            Description = description;
+            Price = price;
+        }
         public override string ToString()
         {
             return $"{ID}. Услуга: {Description}. Цена: {Price}";

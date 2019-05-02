@@ -6,7 +6,7 @@ using DAL;
 
 namespace BusinessLogic
 {
-    class ServiceLogic : IService
+    public class ServiceLogic : IService
     {
         private ServiceDao serviceDao = new ServiceDao();
         public void Add(Service value)
