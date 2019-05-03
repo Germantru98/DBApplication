@@ -26,5 +26,9 @@ namespace BusinessLogic
         {
             loDDao.RemoveByID(ID);
         }
+        public decimal TotalPrice(int ID)
+        {
+            return loDDao.TotalPrice(ID);
+        }
     }
 }

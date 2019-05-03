@@ -8,6 +8,7 @@ using PresentationLayer.CarPL;
 using PresentationLayer.ContractPL;
 using PresentationLayer.ListOfServicePL;
 using PresentationLayer.ListOfDetailPL;
+using PresentationLayer.AdminFunc;
 
 namespace PresentationLayer
 {
@@ -24,11 +25,11 @@ namespace PresentationLayer
             MarkAdminWindow f = new MarkAdminWindow();
             f.Show();
         }
-        
+
 
         private void AdminForm_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void AdminForm_FormClosed(object sender, FormClosedEventArgs e)
@@ -91,6 +92,20 @@ namespace PresentationLayer
             AdminListOfDetailWindow w = new AdminListOfDetailWindow();
             Hide();
             w.Show();
+        }
+
+        private void OnlyDetailPrice_Click(object sender, EventArgs e)
+        {
+            CalcDetailPriceForm f = new CalcDetailPriceForm();
+            Hide();
+            f.Show();
+        }
+
+        private void TotalServicesPriceButton_Click(object sender, EventArgs e)
+        {
+            CalcServicePriceForm f = new CalcServicePriceForm();
+            Hide();
+            f.Show();
         }
     }
 }

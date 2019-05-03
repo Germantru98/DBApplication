@@ -30,5 +30,9 @@ namespace BusinessLogic
         {
             throw new NotImplementedException();
         }
+        public decimal TotalPrice(int ID)
+        {
+            return loSDao.TotalPrice(ID);
+        }
     }
 }

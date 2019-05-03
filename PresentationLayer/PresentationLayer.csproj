@@ -52,6 +52,18 @@
     <Compile Include="AdminForm.Designer.cs">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminFunc\CalcDetailPriceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFunc\CalcDetailPriceForm.Designer.cs">
+      <DependentUpon>CalcDetailPriceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFunc\CalcServicePriceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFunc\CalcServicePriceForm.Designer.cs">
+      <DependentUpon>CalcServicePriceForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +195,12 @@
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminFunc\CalcDetailPriceForm.resx">
+      <DependentUpon>CalcDetailPriceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminFunc\CalcServicePriceForm.resx">
+      <DependentUpon>CalcServicePriceForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminUserForm.resx">
       <DependentUpon>AdminUserForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -276,6 +294,8 @@
       <Name>Entities</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="AdminReports\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

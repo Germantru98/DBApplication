@@ -82,5 +82,34 @@ namespace DAL
                 cmd.ExecuteNonQuery();
             }
         }
+        public decimal TotalPrice(int contractID)
+        {
+            decimal result = 0;
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var cmd = connection.CreateCommand();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "ClientDetailInvoice";
+                cmd.Parameters.AddWithValue(@"ContractID", contractID);
+                var output = new SqlParameter
+                {
+                    DbType = DbType.Decimal,
+                    ParameterName = "@Schet",
+                    Direction = ParameterDirection.Output
+                };
+                cmd.Parameters.Add(output);
+                connection.Open();
+                cmd.ExecuteNonQuery();
+                if (output.Value is decimal)
+                {
+                    return result = (decimal)output.Value;
+                }
+                else
+                {
+                    return 0;
+                }
+            }            
+            
+        }
     }
 }
