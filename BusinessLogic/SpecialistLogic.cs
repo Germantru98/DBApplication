@@ -28,5 +28,9 @@ namespace BusinessLogic
         {
             specialistDao.RemoveByID(ID);
         }
+        public IEnumerable<Specialist> GetAllFreeSpecialists()
+        {
+            return specialistDao.GetAllFreeSpecialists();
+        }
     }
 }

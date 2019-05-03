@@ -24,6 +24,30 @@ namespace DAL
             }
         }
 
+        public IEnumerable<ListOfServicePL> GetAllServices()
+        {
+            List<ListOfServicePL> list = new List<ListOfServicePL>();
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var cmd = connection.CreateCommand();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "GetAllListOfService";                
+                connection.Open();
+                var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    list.Add(new ListOfServicePL
+                    {                        
+                        ContractID = (int)reader["ContractID"],
+                        ServiceID = (int)reader["ServiceID"],
+                        Description = (string)reader["Description"],
+                        Price = (decimal)reader["Price"]
+                    });
+                }
+            }
+            return list;
+        }
+
         public IEnumerable<ListOfService> GetAllServices(int contractID)
         {
             List<ListOfService> list = new List<ListOfService>();
@@ -40,7 +64,7 @@ namespace DAL
                     list.Add(new ListOfService
                     {
                         ContractID = (int)reader["ContractID"],
-                        ServiceID = (int)reader["ServiceID"]
+                        ServiceID = (int)reader["ServiceID"]                        
                     });
                 }
             }

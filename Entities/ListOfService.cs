@@ -11,6 +11,13 @@ namespace Entities
         public int ContractID { get; set; }
         public int ServiceID { get; set; }
 
+        public ListOfService()
+        { }
+        public ListOfService(int contractID,int serviceID)
+        {
+            ContractID = contractID;
+            ServiceID = serviceID;
+        }
         public override string ToString()
         {
             return $"{ContractID} {ServiceID}";

@@ -56,6 +56,30 @@ namespace DAL
             }
             return specialists;
         }
+        public IEnumerable<Specialist> GetAllFreeSpecialists()
+        {
+            List<Specialist> freespecialists = new List<Specialist>();
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var cmd = connection.CreateCommand();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "GetAllFreeSpecialist";
+                connection.Open();
+                var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    freespecialists.Add(new Specialist
+                    {
+                        ID = (int)reader["SpecialistID"],
+                        Name = (string)reader["Name"],
+                        SecondName = (string)reader["SecondName"],
+                        Qualification = (string)reader["Qualification"]
+
+                    });
+                }
+            }
+            return freespecialists;
+        }
 
         public Specialist GetByID(int ID)
         {

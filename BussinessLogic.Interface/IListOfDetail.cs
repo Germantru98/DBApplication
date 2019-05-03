@@ -7,14 +7,11 @@ using System.Threading.Tasks;
 
 namespace BussinessLogic.Interface
 {
-    interface IListOfDetail
+    public interface IListOfDetail
     {
-        IEnumerable<ListOfDetail> GetAll();
-
         void Add(ListOfDetail value);
 
         void Remove(int ID);
-
-        ListOfDetail GetByID(int ID);
+        IEnumerable<ListOfDetailPL> GetAll();
     }
 }

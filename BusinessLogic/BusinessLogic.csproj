@@ -45,6 +45,8 @@
     <Compile Include="ClientLogic.cs" />
     <Compile Include="ContractLogic.cs" />
     <Compile Include="DetailLogic.cs" />
+    <Compile Include="ListOfDetailLogic.cs" />
+    <Compile Include="ListOfServiceLogic.cs" />
     <Compile Include="MarkLogic.cs" />
     <Compile Include="PaymentLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -6,7 +6,7 @@ using BussinessLogic.Interface;
 
 namespace BusinessLogic
 {
-    class ContractLogic : IContract
+    public class ContractLogic : IContract
     {
         private ContractDao contractDao = new ContractDao();
         public void Add(Contract value)

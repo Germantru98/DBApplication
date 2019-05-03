@@ -62,6 +62,32 @@ namespace DAL
             }
             return cars;
         }
+        public IEnumerable<Car<string>> GetAllFreeCars()
+        {
+            List<Car<string>> freecars = new List<Car<string>>();
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var cmd = connection.CreateCommand();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "GetAllFreeCars";
+                connection.Open();
+                var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    freecars.Add(new Car<string>
+                    {
+                        ID = (int)reader["CarID"],
+                        ClientID = (int)reader["ClientID"],
+                        Number = (string)reader["Number"],
+                        Mark = (string)reader["Mark"],
+                        Model = (string)reader["Model"],
+                        DateOfManufacture = (DateTime)reader["DofM"],
+                        Colour = (string)reader["Colour"]
+                    });
+                }
+            }
+            return freecars;
+        }
 
         public Car<int> GetByID(int ID)
         {

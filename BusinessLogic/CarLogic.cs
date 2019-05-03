@@ -31,5 +31,9 @@ namespace BusinessLogic
         {
             carDao.RemoveByID(ID);
         }
+        public IEnumerable<Car<string>> GetAllFreeCars()
+        {
+            return carDao.GetAllFreeCars();
+        }
     }
 }

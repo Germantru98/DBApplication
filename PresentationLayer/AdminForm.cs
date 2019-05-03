@@ -5,6 +5,9 @@ using PresentationLayer.ServicePL;
 using PresentationLayer.SpecialistPL;
 using PresentationLayer.PaymentPL;
 using PresentationLayer.CarPL;
+using PresentationLayer.ContractPL;
+using PresentationLayer.ListOfServicePL;
+using PresentationLayer.ListOfDetailPL;
 
 namespace PresentationLayer
 {
@@ -65,6 +68,27 @@ namespace PresentationLayer
         private void CarButton_Click(object sender, EventArgs e)
         {
             AdminCarWindow w = new AdminCarWindow();
+            Hide();
+            w.Show();
+        }
+
+        private void ContractButton_Click(object sender, EventArgs e)
+        {
+            ContractAdminWindow w = new ContractAdminWindow();
+            Hide();
+            w.Show();
+        }
+
+        private void ListofServicesButton_Click(object sender, EventArgs e)
+        {
+            AdminLoSWindow w = new AdminLoSWindow();
+            Hide();
+            w.Show();
+        }
+
+        private void ListofDetailButton_Click(object sender, EventArgs e)
+        {
+            AdminListOfDetailWindow w = new AdminListOfDetailWindow();
             Hide();
             w.Show();
         }

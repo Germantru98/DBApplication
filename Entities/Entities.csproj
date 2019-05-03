@@ -46,7 +46,9 @@
     <Compile Include="Contract.cs" />
     <Compile Include="Detail.cs" />
     <Compile Include="ListOfDetail.cs" />
+    <Compile Include="ListOfDetailPL.cs" />
     <Compile Include="ListOfService.cs" />
+    <Compile Include="ListOfServicePL.cs" />
     <Compile Include="Mark.cs" />
     <Compile Include="Payment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

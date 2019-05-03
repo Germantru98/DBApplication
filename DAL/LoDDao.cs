@@ -46,6 +46,29 @@ namespace DAL
             }
             return list;
         }
+        public IEnumerable<ListOfDetailPL> GetAllDetail()
+        {
+            List<ListOfDetailPL> list = new List<ListOfDetailPL>();
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var cmd = connection.CreateCommand();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "GetAllListOfDetail";                
+                connection.Open();
+                var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    list.Add(new ListOfDetailPL
+                    {
+                        ContractID = (int)reader["ContractID"],
+                        DetailID = (int)reader["DetailID"],
+                        DetailName = (string)reader["DetailName"],
+                        Price = (decimal)reader["Price"]
+                    });
+                }
+            }
+            return list;
+        }
 
         public void RemoveByID(int contractID)
         {

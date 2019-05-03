@@ -76,6 +76,18 @@
     <Compile Include="ClientPL\ClientAdminForm.Designer.cs">
       <DependentUpon>ClientAdminForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ContractPL\AddContractForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContractPL\AddContractForm.Designer.cs">
+      <DependentUpon>AddContractForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractPL\ContractAdminWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContractPL\ContractAdminWindow.Designer.cs">
+      <DependentUpon>ContractAdminWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="DetailPL\AddDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +99,30 @@
     </Compile>
     <Compile Include="DetailPL\DetailAdminWindow.Designer.cs">
       <DependentUpon>DetailAdminWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfDetailPL\AddLoDForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListOfDetailPL\AddLoDForm.Designer.cs">
+      <DependentUpon>AddLoDForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfDetailPL\AdminListOfDetailWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListOfDetailPL\AdminListOfDetailWindow.Designer.cs">
+      <DependentUpon>AdminListOfDetailWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfServicePL\AddLoS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListOfServicePL\AddLoS.Designer.cs">
+      <DependentUpon>AddLoS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfServicePL\AdminLoSWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListOfServicePL\AdminLoSWindow.Designer.cs">
+      <DependentUpon>AdminLoSWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="MarkPL\AddMarkForm.cs">
       <SubType>Form</SubType>
@@ -159,11 +195,29 @@
     <EmbeddedResource Include="ClientPL\ClientAdminForm.resx">
       <DependentUpon>ClientAdminForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ContractPL\AddContractForm.resx">
+      <DependentUpon>AddContractForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractPL\ContractAdminWindow.resx">
+      <DependentUpon>ContractAdminWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DetailPL\AddDetail.resx">
       <DependentUpon>AddDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DetailPL\DetailAdminWindow.resx">
       <DependentUpon>DetailAdminWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfDetailPL\AddLoDForm.resx">
+      <DependentUpon>AddLoDForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfDetailPL\AdminListOfDetailWindow.resx">
+      <DependentUpon>AdminListOfDetailWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfServicePL\AddLoS.resx">
+      <DependentUpon>AddLoS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfServicePL\AdminLoSWindow.resx">
+      <DependentUpon>AdminLoSWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MarkPL\AddMarkForm.resx">
       <DependentUpon>AddMarkForm.cs</DependentUpon>

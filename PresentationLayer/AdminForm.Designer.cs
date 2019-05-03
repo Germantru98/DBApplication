@@ -72,6 +72,7 @@
             this.ListofDetailButton.TabIndex = 9;
             this.ListofDetailButton.Text = "ListofDetail";
             this.ListofDetailButton.UseVisualStyleBackColor = true;
+            this.ListofDetailButton.Click += new System.EventHandler(this.ListofDetailButton_Click);
             // 
             // ListofServicesButton
             // 
@@ -81,6 +82,7 @@
             this.ListofServicesButton.TabIndex = 8;
             this.ListofServicesButton.Text = "ListofServices";
             this.ListofServicesButton.UseVisualStyleBackColor = true;
+            this.ListofServicesButton.Click += new System.EventHandler(this.ListofServicesButton_Click);
             // 
             // SpecialistButton
             // 
@@ -130,6 +132,7 @@
             this.ContractButton.TabIndex = 3;
             this.ContractButton.Text = "Contract";
             this.ContractButton.UseVisualStyleBackColor = true;
+            this.ContractButton.Click += new System.EventHandler(this.ContractButton_Click);
             // 
             // CarButton
             // 

@@ -16,6 +16,17 @@ namespace Entities
         public string Defect { get; set; }
         public int Payment { get; set; }
 
+        public Contract()
+        { }
+        public Contract(int specialistID, int carID, DateTime date,TimeSpan time, string defect,int payment)
+        {
+            SpecialistID = specialistID;
+            ID = carID;
+            Date = date;
+            Time = time;
+            Defect = defect;
+            Payment = payment;
+        }
         public override string ToString()
         {
             return $"{ID}. Автомобиль: {CarID} Специалист: {SpecialistID} Дата:{Date.ToShortDateString()} Затраченое время: {Time} Дефект: {Defect} Способ оплаты: {Payment}";
