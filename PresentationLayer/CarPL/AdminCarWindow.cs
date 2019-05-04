@@ -35,7 +35,15 @@ namespace PresentationLayer.CarPL
 
         private void RefreshButton_Click(object sender, EventArgs e)
         {
-            CarTable.DataSource = carLogic.GetAll();
+            if (checkBox1.Checked)
+            {
+                CarTable.DataSource = carLogic.GetAllFreeCars();
+            }
+            else
+            {
+                CarTable.DataSource = carLogic.GetAll();
+            }
+            
         }
 
         private void RemoveButton_Click(object sender, EventArgs e)

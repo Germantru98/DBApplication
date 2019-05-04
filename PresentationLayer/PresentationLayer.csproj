@@ -64,6 +64,18 @@
     <Compile Include="AdminFunc\CalcServicePriceForm.Designer.cs">
       <DependentUpon>CalcServicePriceForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminFunc\CalcTotalPriceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFunc\CalcTotalPriceForm.Designer.cs">
+      <DependentUpon>CalcTotalPriceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReports\PeriodReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminReports\PeriodReportForm.Designer.cs">
+      <DependentUpon>PeriodReportForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +93,12 @@
     </Compile>
     <Compile Include="CarPL\AdminCarWindow.Designer.cs">
       <DependentUpon>AdminCarWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientPL\AddClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientPL\AddClientForm.Designer.cs">
+      <DependentUpon>AddClientForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ClientPL\ClientAdminForm.cs">
       <SubType>Form</SubType>
@@ -201,6 +219,12 @@
     <EmbeddedResource Include="AdminFunc\CalcServicePriceForm.resx">
       <DependentUpon>CalcServicePriceForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminFunc\CalcTotalPriceForm.resx">
+      <DependentUpon>CalcTotalPriceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminReports\PeriodReportForm.resx">
+      <DependentUpon>PeriodReportForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminUserForm.resx">
       <DependentUpon>AdminUserForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -209,6 +233,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CarPL\AdminCarWindow.resx">
       <DependentUpon>AdminCarWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientPL\AddClientForm.resx">
+      <DependentUpon>AddClientForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientPL\ClientAdminForm.resx">
       <DependentUpon>ClientAdminForm.cs</DependentUpon>
@@ -270,6 +297,9 @@
     <EmbeddedResource Include="SpecialistPL\AdminSpecialistForm.resx">
       <DependentUpon>AdminSpecialistForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\DataSources\BusinessLogic.MarkLogic.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -294,8 +324,6 @@
       <Name>Entities</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="AdminReports\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

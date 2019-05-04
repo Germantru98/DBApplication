@@ -28,13 +28,25 @@ namespace PresentationLayer.SpecialistPL
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            SpecialistTable.DataSource = specialistLogic.GetAll();
+            if (checkBox1.Checked)
+            {
+                SpecialistTable.DataSource = specialistLogic.GetAllFreeSpecialists();
+            }
+            else
+            {
+                SpecialistTable.DataSource = specialistLogic.GetAll();
+            }
         }
 
         private void AdminSpecialistForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             AdminForm f = new AdminForm();
             f.Show();
+        }
+
+        private void RadioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

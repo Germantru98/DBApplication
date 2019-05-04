@@ -160,6 +160,7 @@
             this.ClientButton.TabIndex = 1;
             this.ClientButton.Text = "Client";
             this.ClientButton.UseVisualStyleBackColor = true;
+            this.ClientButton.Click += new System.EventHandler(this.ClientButton_Click);
             // 
             // MarkButton
             // 
@@ -193,6 +194,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "Total Price";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // TotalServicesPriceButton
             // 
@@ -235,6 +237,7 @@
             this.Report1Button.TabIndex = 5;
             this.Report1Button.Text = "Period Contract Report";
             this.Report1Button.UseVisualStyleBackColor = true;
+            this.Report1Button.Click += new System.EventHandler(this.Report1Button_Click);
             // 
             // AdminForm
             // 

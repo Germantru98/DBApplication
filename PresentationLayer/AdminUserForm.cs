@@ -19,13 +19,13 @@ namespace PresentationLayer
 
         private void AcceptButton_Click(object sender, EventArgs e)
         {
-            if (LoginTextBox.Text == "Admin" && PasswordTextBox.Text == "admin" && AdminUserCBox.Text == "Admin")
+            if (LoginTextBox.Text == "Admin" && PasswordTextBox.Text == "admin")
             {
                 Hide();
                 AdminForm form = new AdminForm();
                 form.Show();
             }
-            else if (LoginTextBox.Text == "User" && PasswordTextBox.Text == "123" && AdminUserCBox.Text == "User")
+            else if (LoginTextBox.Text == "User" && PasswordTextBox.Text == "user")
             {
                 Hide();
                 UserForm form = new UserForm();

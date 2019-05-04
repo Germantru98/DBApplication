@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using PresentationLayer.DetailPL;
+using PresentationLayer.ClientPL;
 using PresentationLayer.ServicePL;
 using PresentationLayer.SpecialistPL;
 using PresentationLayer.PaymentPL;
@@ -9,6 +10,7 @@ using PresentationLayer.ContractPL;
 using PresentationLayer.ListOfServicePL;
 using PresentationLayer.ListOfDetailPL;
 using PresentationLayer.AdminFunc;
+using PresentationLayer.AdminReports;
 
 namespace PresentationLayer
 {
@@ -104,6 +106,27 @@ namespace PresentationLayer
         private void TotalServicesPriceButton_Click(object sender, EventArgs e)
         {
             CalcServicePriceForm f = new CalcServicePriceForm();
+            Hide();
+            f.Show();
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            CalcTotalPriceForm f = new CalcTotalPriceForm();
+            Hide();
+            f.Show();
+        }
+
+        private void Report1Button_Click(object sender, EventArgs e)
+        {
+            PeriodReportForm f = new PeriodReportForm();
+            Hide();
+            f.Show();
+        }
+
+        private void ClientButton_Click(object sender, EventArgs e)
+        {
+            ClientAdminForm f = new ClientAdminForm();
             Hide();
             f.Show();
         }

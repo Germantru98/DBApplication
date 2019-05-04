@@ -32,6 +32,7 @@
             this.AddButton = new System.Windows.Forms.Button();
             this.RemoveButton = new System.Windows.Forms.Button();
             this.RefreshButton = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.CarTable)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,11 +78,23 @@
             this.RefreshButton.UseVisualStyleBackColor = true;
             this.RefreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBox1.Location = new System.Drawing.Point(117, 429);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(106, 20);
+            this.checkBox1.TabIndex = 4;
+            this.checkBox1.Text = "Не в работе";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // AdminCarWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 461);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.RefreshButton);
             this.Controls.Add(this.RemoveButton);
             this.Controls.Add(this.AddButton);
@@ -94,6 +107,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AdminCarWindow_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.CarTable)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -103,5 +117,6 @@
         private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.Button RemoveButton;
         private System.Windows.Forms.Button RefreshButton;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

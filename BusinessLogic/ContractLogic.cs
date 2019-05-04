@@ -28,5 +28,9 @@ namespace BusinessLogic
         {
             contractDao.RemoveByID(ID);
         }
+        public IEnumerable<Contract> PeriodReport(DateTime begin, DateTime end)
+        {
+            return contractDao.PeriodReport(begin, end);
+        }
     }
 }

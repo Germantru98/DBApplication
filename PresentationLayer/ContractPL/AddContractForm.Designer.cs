@@ -57,16 +57,16 @@
             // SpecialistCBox
             // 
             this.SpecialistCBox.FormattingEnabled = true;
-            this.SpecialistCBox.Location = new System.Drawing.Point(124, 85);
+            this.SpecialistCBox.Location = new System.Drawing.Point(12, 85);
             this.SpecialistCBox.Name = "SpecialistCBox";
-            this.SpecialistCBox.Size = new System.Drawing.Size(212, 21);
+            this.SpecialistCBox.Size = new System.Drawing.Size(460, 21);
             this.SpecialistCBox.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(121, 69);
+            this.label2.Location = new System.Drawing.Point(12, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 16);
             this.label2.TabIndex = 2;
@@ -75,16 +75,16 @@
             // CarCBox
             // 
             this.CarCBox.FormattingEnabled = true;
-            this.CarCBox.Location = new System.Drawing.Point(124, 145);
+            this.CarCBox.Location = new System.Drawing.Point(12, 148);
             this.CarCBox.Name = "CarCBox";
-            this.CarCBox.Size = new System.Drawing.Size(212, 21);
+            this.CarCBox.Size = new System.Drawing.Size(457, 21);
             this.CarCBox.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(121, 129);
+            this.label3.Location = new System.Drawing.Point(12, 129);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 16);
             this.label3.TabIndex = 4;
@@ -92,7 +92,7 @@
             // 
             // DatePicker
             // 
-            this.DatePicker.Location = new System.Drawing.Point(124, 207);
+            this.DatePicker.Location = new System.Drawing.Point(12, 206);
             this.DatePicker.Name = "DatePicker";
             this.DatePicker.Size = new System.Drawing.Size(212, 20);
             this.DatePicker.TabIndex = 5;
@@ -101,7 +101,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(121, 188);
+            this.label4.Location = new System.Drawing.Point(9, 187);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 16);
             this.label4.TabIndex = 6;
@@ -111,7 +111,7 @@
             // 
             this.TimeCBox.FormatString = "T";
             this.TimeCBox.FormattingEnabled = true;
-            this.TimeCBox.Location = new System.Drawing.Point(124, 262);
+            this.TimeCBox.Location = new System.Drawing.Point(12, 259);
             this.TimeCBox.Name = "TimeCBox";
             this.TimeCBox.Size = new System.Drawing.Size(212, 21);
             this.TimeCBox.TabIndex = 8;
@@ -120,7 +120,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(125, 243);
+            this.label5.Location = new System.Drawing.Point(9, 240);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 16);
             this.label5.TabIndex = 9;
@@ -128,7 +128,7 @@
             // 
             // DefectTBox
             // 
-            this.DefectTBox.Location = new System.Drawing.Point(124, 323);
+            this.DefectTBox.Location = new System.Drawing.Point(12, 313);
             this.DefectTBox.Name = "DefectTBox";
             this.DefectTBox.Size = new System.Drawing.Size(212, 20);
             this.DefectTBox.TabIndex = 10;
@@ -137,7 +137,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(121, 304);
+            this.label6.Location = new System.Drawing.Point(9, 294);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(84, 16);
             this.label6.TabIndex = 11;
@@ -146,16 +146,16 @@
             // PaymentCBox
             // 
             this.PaymentCBox.FormattingEnabled = true;
-            this.PaymentCBox.Location = new System.Drawing.Point(124, 374);
+            this.PaymentCBox.Location = new System.Drawing.Point(12, 366);
             this.PaymentCBox.Name = "PaymentCBox";
-            this.PaymentCBox.Size = new System.Drawing.Size(212, 21);
+            this.PaymentCBox.Size = new System.Drawing.Size(258, 21);
             this.PaymentCBox.TabIndex = 12;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(121, 355);
+            this.label7.Location = new System.Drawing.Point(9, 347);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(110, 16);
             this.label7.TabIndex = 13;

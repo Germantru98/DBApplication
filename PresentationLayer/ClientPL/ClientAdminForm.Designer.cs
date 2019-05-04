@@ -43,7 +43,7 @@
             this.ClientTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ClientTable.Location = new System.Drawing.Point(12, 77);
             this.ClientTable.Name = "ClientTable";
-            this.ClientTable.Size = new System.Drawing.Size(460, 209);
+            this.ClientTable.Size = new System.Drawing.Size(560, 209);
             this.ClientTable.TabIndex = 4;
             // 
             // AddClient
@@ -55,16 +55,18 @@
             this.AddClient.TabIndex = 5;
             this.AddClient.Text = "Add";
             this.AddClient.UseVisualStyleBackColor = true;
+            this.AddClient.Click += new System.EventHandler(this.AddClient_Click);
             // 
             // RemoveClient
             // 
             this.RemoveClient.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.RemoveClient.Location = new System.Drawing.Point(333, 320);
+            this.RemoveClient.Location = new System.Drawing.Point(433, 320);
             this.RemoveClient.Name = "RemoveClient";
             this.RemoveClient.Size = new System.Drawing.Size(139, 40);
             this.RemoveClient.TabIndex = 6;
             this.RemoveClient.Text = "Remove";
             this.RemoveClient.UseVisualStyleBackColor = true;
+            this.RemoveClient.Click += new System.EventHandler(this.RemoveClient_Click);
             // 
             // button1
             // 
@@ -74,20 +76,22 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "Refresh";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // ClientAdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 461);
+            this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.RemoveClient);
             this.Controls.Add(this.AddClient);
             this.Controls.Add(this.ClientTable);
-            this.MaximumSize = new System.Drawing.Size(500, 500);
-            this.MinimumSize = new System.Drawing.Size(500, 500);
+            this.MaximumSize = new System.Drawing.Size(600, 500);
+            this.MinimumSize = new System.Drawing.Size(600, 500);
             this.Name = "ClientAdminForm";
             this.Text = "ClientAdminForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ClientAdminForm_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.ClientTable)).EndInit();
             this.ResumeLayout(false);
 

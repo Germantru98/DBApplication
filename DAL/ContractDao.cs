@@ -102,5 +102,33 @@ namespace DAL
                 cmd.ExecuteNonQuery();
             }
         }
+        public IEnumerable<Contract> PeriodReport(DateTime begin,DateTime end)
+        {
+            List<Contract> list = new List<Contract>();
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var cmd = connection.CreateCommand();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "Report_for_the_period";
+                cmd.Parameters.AddWithValue("@begin", begin.ToShortDateString());
+                cmd.Parameters.AddWithValue("@end", end.ToShortDateString());
+                connection.Open();
+                var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    list.Add(new Contract
+                    {
+                        ID = (int)reader["ContractID"],
+                        SpecialistID = (int)reader["SpecialistID"],
+                        CarID = (int)reader["CarID"],
+                        Date = (DateTime)reader["Date"],
+                        Time = (TimeSpan)reader["Time"],
+                        Defect = (string)reader["Defect"],
+                        Payment = (int)reader["Payment"]
+                    });
+                }
+            }
+            return list;
+        }
     }
 }

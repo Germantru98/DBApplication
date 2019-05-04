@@ -39,16 +39,16 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(22, 74);
+            this.comboBox1.Location = new System.Drawing.Point(12, 74);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(450, 21);
+            this.comboBox1.Size = new System.Drawing.Size(460, 21);
             this.comboBox1.TabIndex = 0;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(22, 143);
+            this.textBox1.Location = new System.Drawing.Point(16, 143);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 20);
+            this.textBox1.Size = new System.Drawing.Size(247, 20);
             this.textBox1.TabIndex = 1;
             // 
             // button1
@@ -66,7 +66,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(18, 51);
+            this.label1.Location = new System.Drawing.Point(12, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 20);
             this.label1.TabIndex = 3;
@@ -76,7 +76,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(18, 120);
+            this.label2.Location = new System.Drawing.Point(12, 120);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(195, 20);
             this.label2.TabIndex = 4;
@@ -106,6 +106,7 @@
             this.MaximumSize = new System.Drawing.Size(500, 300);
             this.MinimumSize = new System.Drawing.Size(500, 300);
             this.Name = "CalcDetailPriceForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CalcDetailPriceForm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CalcDetailPriceForm_FormClosed);
             this.ResumeLayout(false);
