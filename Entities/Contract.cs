@@ -21,7 +21,7 @@ namespace Entities
         public Contract(int specialistID, int carID, DateTime date,TimeSpan time, string defect,int payment)
         {
             SpecialistID = specialistID;
-            ID = carID;
+            CarID = carID;
             Date = date;
             Time = time;
             Defect = defect;

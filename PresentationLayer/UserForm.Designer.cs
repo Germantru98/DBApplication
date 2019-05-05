@@ -134,6 +134,7 @@
             // 
             // MarkTable
             // 
+            this.MarkTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.MarkTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.MarkTable.Location = new System.Drawing.Point(6, 6);
             this.MarkTable.Name = "MarkTable";

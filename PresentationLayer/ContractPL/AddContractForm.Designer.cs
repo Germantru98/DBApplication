@@ -148,7 +148,7 @@
             this.PaymentCBox.FormattingEnabled = true;
             this.PaymentCBox.Location = new System.Drawing.Point(12, 366);
             this.PaymentCBox.Name = "PaymentCBox";
-            this.PaymentCBox.Size = new System.Drawing.Size(258, 21);
+            this.PaymentCBox.Size = new System.Drawing.Size(274, 21);
             this.PaymentCBox.TabIndex = 12;
             // 
             // label7
