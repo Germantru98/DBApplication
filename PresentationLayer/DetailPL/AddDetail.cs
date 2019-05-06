@@ -24,7 +24,7 @@ namespace PresentationLayer.DetailPL
         {
             Detail detail = new Detail(textBox1.Text, decimal.Parse( textBox2.Text));
             detailLogic.Add(detail);
-            Hide();
+            Close();
         }
 
         private void AddDetail_FormClosed(object sender, FormClosedEventArgs e)

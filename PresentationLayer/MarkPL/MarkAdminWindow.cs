@@ -46,5 +46,10 @@ namespace PresentationLayer
             int id = (int)MarkTable.CurrentRow.Cells[0].Value;
             markLogic.Remove(id);
         }
+
+        private void MarkTable_DataSourceChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

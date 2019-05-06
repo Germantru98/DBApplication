@@ -25,8 +25,8 @@ namespace PresentationLayer.MarkPL
         private void AddButton_Click(object sender, EventArgs e)
         {
             Mark mark = new Mark(textBox1.Text.ToUpper());            
-            markLogic.Add(mark);            
-            Hide();            
+            markLogic.Add(mark);
+            Close();            
         }
 
         private void AddMarkForm_FormClosed(object sender, FormClosedEventArgs e)

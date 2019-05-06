@@ -29,7 +29,7 @@ namespace PresentationLayer.ListOfServicePL
             Contract c = (Contract)ContractCbox.SelectedItem;
             Service s = (Service)ServiceCBox.SelectedItem;
             listOfServiceLogic.Add(new ListOfService(c.ID, s.ID));
-            Hide();
+            Close();
         }
     }
 }

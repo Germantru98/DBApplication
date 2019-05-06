@@ -23,7 +23,7 @@ namespace PresentationLayer.ServicePL
         private void Button1_Click(object sender, EventArgs e)
         {
             serviceLogic.Add(new Service(textBox1.Text, decimal.Parse(textBox2.Text)));
-            Hide();
+            Close();
         }
 
         private void AddServiceForm_FormClosed(object sender, FormClosedEventArgs e)

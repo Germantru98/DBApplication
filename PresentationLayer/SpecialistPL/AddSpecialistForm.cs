@@ -28,7 +28,7 @@ namespace PresentationLayer.SpecialistPL
         private void Addbutton_Click(object sender, EventArgs e)
         {
             specialistLogic.Add(new Specialist(NameTextBox.Text, SnameTextBox.Text, QualificationTextBox.Text));
-            Hide();
+            Close();
         }
     }
 }

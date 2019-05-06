@@ -31,7 +31,7 @@ namespace PresentationLayer.ListOfDetailPL
             Contract c = (Contract)ContractCBox.SelectedItem;
             Detail d = (Detail)DetailCBox.SelectedItem;
             logic.Add(new ListOfDetail(c.ID, d.ID));
-            Hide();
+            Close();
         }
     }
 }

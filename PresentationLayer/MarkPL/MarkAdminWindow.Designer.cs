@@ -74,6 +74,7 @@
             this.MarkTable.Name = "MarkTable";
             this.MarkTable.Size = new System.Drawing.Size(350, 183);
             this.MarkTable.TabIndex = 3;
+            this.MarkTable.DataSourceChanged += new System.EventHandler(this.MarkTable_DataSourceChanged);
             // 
             // button1
             // 

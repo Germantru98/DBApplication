@@ -23,7 +23,7 @@ namespace PresentationLayer.CarPL
             Client c = (Client)ClientsCBox.SelectedItem;
             Mark m = (Mark)MarkCBox.SelectedItem;
             carLogic.Add(new Car<int>(c.ID, NumberTextBox.Text, m.ID, ModelTextBox.Text, DofMPicker.Value, ColourTextBox.Text));
-            Hide();
+            Close();
         }
     }
 }

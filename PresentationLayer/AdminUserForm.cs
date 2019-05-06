@@ -21,15 +21,16 @@ namespace PresentationLayer
         {
             if (LoginTextBox.Text == "Admin" && PasswordTextBox.Text == "admin")
             {
-                Hide();
                 AdminForm form = new AdminForm();
                 form.Show();
+                Hide();
             }
             else if (LoginTextBox.Text == "User" && PasswordTextBox.Text == "user")
             {
-                Hide();
                 UserForm form = new UserForm();
                 form.Show();
+                Hide();
+
             }
             else
             {
@@ -39,7 +40,7 @@ namespace PresentationLayer
 
         private void AdminUserForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            
+            Application.Exit();
         }
 
         private void AdminUserForm_FormClosing(object sender, FormClosingEventArgs e)

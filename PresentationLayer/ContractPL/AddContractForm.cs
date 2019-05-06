@@ -36,7 +36,7 @@ namespace PresentationLayer.ContractPL
             Specialist specialist = (Specialist)SpecialistCBox.SelectedItem;
             TimeSpan ts = (TimeSpan)TimeCBox.SelectedItem;
             contractLogic.Add(new Contract(specialist.ID, car.ID, DatePicker.Value, ts, DefectTBox.Text, payment.ID));
-            Hide();
+            Close();
         }
 
         private void AddContractForm_FormClosed(object sender, FormClosedEventArgs e)

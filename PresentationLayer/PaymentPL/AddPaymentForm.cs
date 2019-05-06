@@ -23,7 +23,7 @@ namespace PresentationLayer.PaymentPL
         private void AddButton_Click(object sender, EventArgs e)
         {
             paymentLogic.Add(new Payment(PaymentName.Text, PaymentType.Text));
-            Hide();
+            Close();
         }
     }
 }

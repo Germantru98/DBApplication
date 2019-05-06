@@ -23,7 +23,7 @@ namespace PresentationLayer.ClientPL
         private void Button1_Click(object sender, EventArgs e)
         {
             clientLogic.Add(new Client(NameBox.Text, SecondNameBox.Text, NumberBox.Text, PassportBox.Text, AddresBox.Text));
-            Hide();
+            Close();
         }
     }
 }
