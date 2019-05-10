@@ -41,7 +41,7 @@
             this.ContractTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ContractTable.Location = new System.Drawing.Point(12, 50);
             this.ContractTable.Name = "ContractTable";
-            this.ContractTable.Size = new System.Drawing.Size(776, 349);
+            this.ContractTable.Size = new System.Drawing.Size(780, 349);
             this.ContractTable.TabIndex = 0;
             // 
             // button1
@@ -80,12 +80,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 561);
+            this.ClientSize = new System.Drawing.Size(804, 561);
             this.Controls.Add(this.AddButton);
             this.Controls.Add(this.RemoveButton);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.ContractTable);
+            this.MaximumSize = new System.Drawing.Size(820, 600);
+            this.MinimumSize = new System.Drawing.Size(820, 600);
             this.Name = "ContractAdminWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ContractAdminWindow";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ContractAdminWindow_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.ContractTable)).EndInit();

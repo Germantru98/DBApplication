@@ -106,6 +106,7 @@
             this.MaximumSize = new System.Drawing.Size(500, 300);
             this.MinimumSize = new System.Drawing.Size(500, 300);
             this.Name = "CalcServicePriceForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CalcServicePriceForm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CalcServicePriceForm_FormClosed);
             this.ResumeLayout(false);

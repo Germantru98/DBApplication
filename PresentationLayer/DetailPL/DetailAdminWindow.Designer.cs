@@ -89,6 +89,7 @@
             this.MaximumSize = new System.Drawing.Size(500, 500);
             this.MinimumSize = new System.Drawing.Size(500, 500);
             this.Name = "DetailAdminWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DetailAdminWindow";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DetailAdminWindow_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.DetailTable)).EndInit();

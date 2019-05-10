@@ -117,6 +117,7 @@
             this.MaximumSize = new System.Drawing.Size(800, 500);
             this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "PeriodReportForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PeriodReportForm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PeriodReportForm_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.ContractTable)).EndInit();

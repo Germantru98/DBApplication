@@ -89,6 +89,7 @@
             this.MaximumSize = new System.Drawing.Size(500, 500);
             this.MinimumSize = new System.Drawing.Size(500, 500);
             this.Name = "PaymentAdminWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PaymentAdminWindow";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PaymentAdminWindow_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.PaymentTable)).EndInit();

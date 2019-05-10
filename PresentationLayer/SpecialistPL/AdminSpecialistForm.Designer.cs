@@ -102,6 +102,7 @@
             this.MaximumSize = new System.Drawing.Size(600, 500);
             this.MinimumSize = new System.Drawing.Size(600, 500);
             this.Name = "AdminSpecialistForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminSpecialistForm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AdminSpecialistForm_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.SpecialistTable)).EndInit();
