@@ -30,14 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.ClientTable = new System.Windows.Forms.DataGridView();
-            this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);            
+            this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.repairStationDataSet = new PresentationLayer.RepairStationDataSet();
             this.AddClient = new System.Windows.Forms.Button();
             this.RemoveClient = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            
+            this.clientTableAdapter = new PresentationLayer.RepairStationDataSetTableAdapters.ClientTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.ClientTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
-            
+            ((System.ComponentModel.ISupportInitialize)(this.repairStationDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // ClientTable
@@ -54,11 +55,12 @@
             // clientBindingSource
             // 
             this.clientBindingSource.DataMember = "Client";
-            
+            this.clientBindingSource.DataSource = this.repairStationDataSet;
             // 
             // repairStationDataSet
             // 
-           
+            this.repairStationDataSet.DataSetName = "RepairStationDataSet";
+            this.repairStationDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // AddClient
             // 
@@ -94,7 +96,7 @@
             // 
             // clientTableAdapter
             // 
-            
+            this.clientTableAdapter.ClearBeforeFill = true;
             // 
             // ClientAdminForm
             // 
@@ -113,7 +115,8 @@
             this.Text = "ClientAdminForm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ClientAdminForm_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.ClientTable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).EndInit();            
+            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repairStationDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -123,7 +126,9 @@
         private System.Windows.Forms.DataGridView ClientTable;
         private System.Windows.Forms.Button AddClient;
         private System.Windows.Forms.Button RemoveClient;
-        private System.Windows.Forms.Button button1;       
-        private System.Windows.Forms.BindingSource clientBindingSource;        
+        private System.Windows.Forms.Button button1;
+        private RepairStationDataSet repairStationDataSet;
+        private System.Windows.Forms.BindingSource clientBindingSource;
+        private RepairStationDataSetTableAdapters.ClientTableAdapter clientTableAdapter;
     }
 }
